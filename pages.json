@@ -1,0 +1,5 @@
+{
+  "output_dir" :"blog/html/",
+  "template_dir" : "templates",
+  "pages" :[]
+}
