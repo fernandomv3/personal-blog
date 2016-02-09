@@ -1,0 +1,16 @@
+{% set rel_path = "../" %}
+{% extends "base.html" %}
+{% block content %}
+<article class="post">
+	<header>
+		<h2>{% block post_title %}{% endblock %}</h2>
+		<div class="post-meta">
+			<p>By {% block author_link %}{% endblock %} under {% block post_categories %}{% endblock %}</p>
+		</div>
+	</header>
+	<div class="content">
+	{% block post_content %}
+	{% endblock %}
+	</div>
+</article>
+{% endblock %}

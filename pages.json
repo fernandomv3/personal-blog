@@ -1,5 +1,16 @@
 {
-  "output_dir" :"blog/html/",
+  "output_dir" :"blog/",
   "template_dir" : "templates",
-  "pages" :[]
+  "pages" :[
+    {
+      "name":"index.html",
+      "template":"index.html",
+      "values": {}
+    },
+    {
+      "name":"posts/test.html",
+      "template":"posts/test.html",
+      "values": {}
+    }
+  ]
 }

@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal blog where I write about various random topics. Opinions are highly personal and biased">
   <title>fernandomv3's blog - {% block title %}{% endblock %}</title>
-  <link rel="stylesheet" href="css/pure-min.css">
+  <link rel="stylesheet" href="{{rel_path}}css/pure-min.css">
   <!--[if lte IE 8]>
     <link rel="stylesheet" href="css/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="css/grids-responsive-min.css">
+    <link rel="stylesheet" href="{{rel_path}}css/grids-responsive-min.css">
   <!--<![endif]-->
+  <link rel="stylesheet" href="{{rel_path}}css/blog.css">
   {% block styles %}
   {% endblock %}
   <!--[if lt IE 9]>
@@ -22,6 +23,10 @@
 </head>
 <body>
   <div id="layout" class="pure-g">
+    <div class="content pure-u-1 pure-m-u-5-5">
+    {% block content%}
+    {% endblock %}
+    </div>
   </div>
   {% block scripts %}
   {% endblock %}
