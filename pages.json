@@ -1,6 +1,10 @@
 {
   "output_dir" :"blog/",
   "template_dir" : "templates",
+  "global_vars":
+  {
+
+  },
   "pages" :[
     {
       "name":"index.html",
