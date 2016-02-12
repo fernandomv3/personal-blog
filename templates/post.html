@@ -3,12 +3,10 @@
 {% block content %}
 <article class="post">
 	<header>
-		<h2>{% block post_title %}{% endblock %}</h2>
-		<div class="post-meta">
-			<p>By {% block author_link %}{% endblock %} under {% block post_categories %}{% endblock %}</p>
-		</div>
+		<h2 class="post-title">{% block post_title %}{% endblock %}</h2>
+		<p class="post-meta">By {% block author_link %}{% endblock %} under {% block post_categories %}{% endblock %}</p>
 	</header>
-	<div class="content">
+	<div class="post-content">
 	{% block post_content %}
 	{% endblock %}
 	</div>

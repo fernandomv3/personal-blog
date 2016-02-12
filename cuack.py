@@ -62,10 +62,11 @@ def main(argv):
   pages = json_conf['pages']
   for page in pages:
     template = load_template(page['template'])
-    #for csv_conf in page['csv']:
-    #  csv_data = load_csv_values(csv_conf['file_name'],csv_conf['csv_params'])
-    #  page['values'][csv_conf['var_name']] = csv_data
-    result= template.render(name=page['name'],dev= dev,**page['values'])
+    if 'csv' in page:
+      for csv_conf in page['csv']:
+        csv_data = load_csv_values(csv_conf['file_name'],csv_conf['csv_params'])
+        page['values'][csv_conf['var_name']] = csv_data
+    result= template.render(name=page['name'],dev= dev,meta= pages,**page['values'])
     write_page(json_conf['output_dir']+ "/" + page['name'],result)
 
 if __name__ == "__main__":
