@@ -4,11 +4,11 @@ body{
   background: rgba(43,43,41,1);
 }
 
-a {
+a.post-link {
   color:#0079A0;
 }
 
-a:hover{
+a.post-link:hover{
   color:#00B6F1;
 }
 
@@ -75,12 +75,12 @@ a:hover{
   font-weight: bold;
 }
 
-.brand-name, .menu-item{
+.brand-name, .menu-item a{
   text-decoration: none;
   color: #DACAEE;
 }
 
-.brand-name:hover, .menu-item:hover{
+.brand-name:hover, .menu-item a:hover{
   color: #FCECFF;
 }
 
@@ -110,6 +110,11 @@ a:hover{
     background: #999;
     font-size: 80%;
     border-radius: 0.063em;
+    text-decoration: none;
+}
+
+.post-category-cg{
+  background-color: #00FF00;
 }
 
 @media screen and (min-width: 35.5em){
