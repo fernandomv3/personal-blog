@@ -155,3 +155,25 @@ a.post-link:hover{
     margin-bottom: 0;
   }
 }
+
+.post-category-cg{
+  color:#C32C10;
+}
+.post-category-ml{
+  color:#5D840E;
+}
+.post-category-ds{
+  color:#773F34;
+}
+.post-category-dv{
+  color:#172644;
+}
+.post-category-g{
+  color:#4C73C3;
+}
+.post-category-f{
+  color:#0E841E;
+}
+.post-category-cb{
+  color:#C36502;
+}
