@@ -117,10 +117,6 @@ a.post-link:hover{
     text-decoration: none;
 }
 
-.post-category-cg{
-  background-color: #00FF00;
-}
-
 #license{
   margin-top: 1em;
   margin-bottom: 1em;
@@ -157,23 +153,23 @@ a.post-link:hover{
 }
 
 .post-category-cg{
-  color:#C32C10;
+  background-color:#C32C10;
 }
 .post-category-ml{
-  color:#5D840E;
+  background-color:#5D840E;
 }
 .post-category-ds{
-  color:#773F34;
+  background-color:#773F34;
 }
 .post-category-dv{
-  color:#172644;
+  background-color:#172644;
 }
 .post-category-g{
-  color:#4C73C3;
+  background-color:#4C73C3;
 }
 .post-category-f{
-  color:#0E841E;
+  background-color:#0E841E;
 }
 .post-category-cb{
-  color:#C36502;
+  background-color:#C36502;
 }

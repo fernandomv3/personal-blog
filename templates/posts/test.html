@@ -3,8 +3,8 @@
 {% block post_title %} The first test post {% endblock %}
 {% block author_link %} <a class="post-link" href="about.html#fernandomv3">fernandomv3</a> {% endblock %}
 {% block post_categories %}
-<a class="post-category post-category-design" href="#">Computer Graphics</a>
-<a class="post-category post-category-pure" href="#">Machine Learning</a> {% endblock %}
+{{global_vars["categories"]["Computer Graphics"]|safe}}
+{{global_vars["categories"]["Machine Learning"]|safe}}{% endblock %}
 {% block post_content %}
 <p> This is a test post and this is the first paragraph, many lines of text should be included here, and this part of the template should be filled with the necessary html for it to appear just as you like it</p>
 <p>This is the second and the last paragraph.</p>
