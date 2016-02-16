@@ -66,10 +66,10 @@ def main(argv):
     if 'csv' in page:
       for csv_conf in page['csv']:
         csv_data = load_csv_values(csv_conf['file_name'],csv_conf['csv_params'])
-        page['values'][csv_conf['var_name']] = csv_data
+        page[csv_conf['var_name']] = csv_data
     if 'global_vars' in json_conf:
       global_vars = json_conf['global_vars'] 
-    result= template.render(name=page['name'],dev= dev,meta= pages,global_vars= global_vars,current_page = page, **page['values'])
+    result= template.render(name=page['name'],dev= dev,meta= pages,global_vars= global_vars,current_page = page)
     write_page(json_conf['output_dir']+ '/' + page['name'],result)
 
 if __name__ == '__main__':
