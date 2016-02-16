@@ -18,12 +18,13 @@
     {
       "name":"index.html",
       "template":"index.html",
-      "values": {}
+      "type":"page"
     },
     {
       "name":"posts/test.html",
       "template":"posts/test.html",
-      "values": {}
+      "type": "post",
+      "categories":["Computer Graphics","Machine Learning"]
     }
   ]
 }
