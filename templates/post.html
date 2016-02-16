@@ -4,7 +4,12 @@
 <article class="post">
 	<header>
 		<h2 class="post-title">{% block post_title %}{% endblock %}</h2>
-		<p class="post-meta">By {% block author_link %}{% endblock %} under {% block post_categories %}{% endblock %}</p>
+		<p class="post-meta">By {% block author_link %}{% endblock %} under 
+		{% block post_categories %}
+		{% for catg in current_page["categories"] %}
+		{{global_vars["categories"][catg]|safe}}
+		{% endfor %}
+		{% endblock %}</p>
 	</header>
 	<div class="post-content">
 	{% block post_content %}
