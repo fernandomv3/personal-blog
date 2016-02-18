@@ -5,13 +5,13 @@
   {
     "categories":
     {
-      "Computer Graphics" : "<a class='post-category post-category-cg' href='#'>Computer Graphics</a>",
-      "Machine Learning" : "<a class='post-category post-category-ml' href='#'>Machine Learning</a>",
-      "Data Science":"<a class='post-category post-category-ds' href='#'>Data Science</a>",
-      "Data Visualisation" : "<a class='post-category post-category-dv' href='#'>Computer Graphics</a>",
-      "Games" : "<a class='post-category post-category-g' href='#'>Games</a>",
-      "Films" : "<a class='post-category post-category-f' href='#'>Films</a>",
-      "Comic books" : "<a class='post-category post-category-cb' href='#''>Comic books</a>"
+      "Computer Graphics" : "<a class='post-category post-category-cg' href='categories.html'>Computer Graphics</a>",
+      "Machine Learning" : "<a class='post-category post-category-ml' href='categories.html'>Machine Learning</a>",
+      "Data Science":"<a class='post-category post-category-ds' href='categories.html'>Data Science</a>",
+      "Data Visualisation" : "<a class='post-category post-category-dv' href='categories.html'>Computer Graphics</a>",
+      "Games" : "<a class='post-category post-category-g' href='categories.html'>Games</a>",
+      "Films" : "<a class='post-category post-category-f' href='categories.html'>Films</a>",
+      "Comic books" : "<a class='post-category post-category-cb' href='categories.html'>Comic books</a>"
     }
   },
   "pages" :[
