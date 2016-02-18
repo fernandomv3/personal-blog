@@ -7,7 +7,7 @@
         <section class="post-list">
             <p>Here's a list of all blog post ordered by date(yyyy/mm/dd)</p>
             <ul class="blog-post-list">
-            {% for page in meta|selectattr("type","equalto","post")|sort(attribute="date") %}
+            {% for page in meta|selectattr("type","equalto","post")|sort(reverse=True,attribute="date") %}
                 <li class="post-item"><a href="{{ page['name'] }}">{{ page["date"] }} - {{ page["title"] }}</a></li>
             {% endfor %}
             </ul>
