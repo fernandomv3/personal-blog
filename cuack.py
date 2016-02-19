@@ -59,6 +59,7 @@ def main(argv):
   json_conf = parse_args()
   template_dir = os.path.join(os.path.dirname(__file__),json_conf['template_dir'])
   jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir),autoescape= True)
+  jinja_env.add_extension('jinja2.ext.loopcontrols')
 
   pages = json_conf['pages']
   for page in pages:

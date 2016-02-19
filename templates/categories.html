@@ -3,18 +3,18 @@
 <div>
     <!-- A wrapper for all the blog posts -->
     <div class="posts">
-        <h1>Posts grouped by category</h1>
+        <h1 class="page-title">Posts grouped by category</h1>
         <section class="post-list">
             <p>Here's a list of all blog posts ordered by category. Some posts have more than one category so it is posible for the same post to appear in many listings.</p>
             
             <ul class="category-list">
-            {% for category in global_vars["categories"]%}
+            {% for category, markup in global_vars["categories"]|dictsort %}
                 <li class="category-item">
-                    <h2>{{ category }}</h2>
+                    <h2 class="category-title">{{ category }}</h2>
                     <ul class="blog-post-list">
                     {% for page in meta|selectattr("type","equalto","post")|sort(reverse=True,attribute="date") %}
                         {% if category in page["categories"]%}
-                        <li class="post-item"><a href="{{ page['name'] }}">{{ page["date"] }} - {{ page["title"] }}</a></li>
+                        <li class="post-item"><a class="post-link" href="{{ page['name'] }}">{{ page["date"] }} - {{ page["title"] }}</a></li>
                         {% endif %}
                     {% endfor %}
                     </ul>

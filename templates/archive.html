@@ -3,12 +3,12 @@
 <div>
     <!-- A wrapper for all the blog posts -->
     <div class="posts">
-        <h1>Archive (ordered by date)</h1>
+        <h1 class="page-title">Archive (ordered by date)</h1>
         <section class="post-list">
-            <p>Here's a list of all blog post ordered by date(yyyy/mm/dd)</p>
+            <p>Here's a list of all blog post ordered by date (yyyy/mm/dd)</p>
             <ul class="blog-post-list">
             {% for page in meta|selectattr("type","equalto","post")|sort(reverse=True,attribute="date") %}
-                <li class="post-item"><a href="{{ page['name'] }}">{{ page["date"] }} - {{ page["title"] }}</a></li>
+                <li class="post-item"><a class="post-link" href="{{ page['name'] }}">{{ page["date"] }} - {{ page["title"] }}</a></li>
             {% endfor %}
             </ul>
         </section>
