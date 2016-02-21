@@ -12,7 +12,7 @@
       "Games" : "<a class='post-category post-category-g' href='categories.html'>Games</a>",
       "Films" : "<a class='post-category post-category-f' href='categories.html'>Films</a>",
       "Comic books" : "<a class='post-category post-category-cb' href='categories.html'>Comic books</a>",
-      "Food" : "<a class='post-category post-category-f' href='categories.html'>Food</a>",
+      "Food" : "<a class='post-category post-category-fo' href='categories.html'>Food</a>",
       "Miscelaneous" : "<a class='post-category post-category-m' href='categories.html'>Miscelaneous</a>"
     }
   },
