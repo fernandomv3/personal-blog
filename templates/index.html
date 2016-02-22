@@ -10,10 +10,10 @@
         {%- if loop.index0 >= 5 %}{% break %}{% endif %}
         <section class="post pure-g">
             <header class="post-header pure-u-1">
-                <h2 class="post-title">{{page["title"]}}</h2>
+                <a class="title-link" href="{{page['name']}}"><h2 class="post-title">{{page["title"]}}</h2></a>
             </header>
             <div class="pure-u-1 pure-u-sm-6-24">
-                <img class="pure-img"/>
+                <img src="{{page['thumbnail']}}" class="pure-img"/>
             </div>
             <div class="post-description pure-u-1 pure-u-sm-18-24">
                 {{page["summary"]|safe}}

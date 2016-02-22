@@ -12,6 +12,14 @@ a.post-link:hover{
   color:#00B6F1;
 }
 
+.center .pure-img{
+  display: inline-block;
+}
+
+.center{
+  text-align: center;
+}
+
 .category-title{
   font-size: 1.2em;
   color:#333;
@@ -26,8 +34,20 @@ a.post-link:hover{
   color:#333;
 }
 
+h1,h2,h3,h4{
+  color:#333;
+}
+
+h4{
+  font-size: 1em;
+}
+
 .post-item{
   list-style: none;
+}
+
+section.post{
+  padding-bottom: 2em;
 }
 
 .title-separator{
@@ -73,12 +93,20 @@ a.post-link:hover{
   padding: 0.469em 1em;
 }
 
+.menu-item a{
+  display: block;
+}
+
 .menu-toogle{
   position: absolute;
   top: 0;
   right: 0;
   width: 3em;
   height: 3em;
+}
+
+.title-link{
+  text-decoration: none;
 }
 
 .menu-toogle.x .hor-bar{
@@ -186,6 +214,11 @@ a.post-link:hover{
   }
 }
 
+.pure-img{
+  padding: 1em;
+  width: 88%;
+}
+
 @media screen and (min-width: 64em){
   .content{
     padding: 2em 3em;
@@ -220,4 +253,10 @@ a.post-link:hover{
 }
 .post-category-m{
   background-color:#5D840E;
+}
+.post-category-r{
+  background-color:#5D840E;
+}
+.post-category-gd{
+  background-color:#773F34;
 }

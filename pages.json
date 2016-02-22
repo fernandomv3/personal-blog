@@ -5,15 +5,17 @@
   {
     "categories":
     {
-      "Computer Graphics" : "<a class='post-category post-category-cg' href='categories.html'>Computer Graphics</a>",
-      "Machine Learning" : "<a class='post-category post-category-ml' href='categories.html'>Machine Learning</a>",
-      "Data Science":"<a class='post-category post-category-ds' href='categories.html'>Data Science</a>",
-      "Data Visualisation" : "<a class='post-category post-category-dv' href='categories.html'>Data Visualisation</a>",
-      "Games" : "<a class='post-category post-category-g' href='categories.html'>Games</a>",
-      "Films" : "<a class='post-category post-category-f' href='categories.html'>Films</a>",
-      "Comic books" : "<a class='post-category post-category-cb' href='categories.html'>Comic books</a>",
-      "Food" : "<a class='post-category post-category-fo' href='categories.html'>Food</a>",
-      "Miscelaneous" : "<a class='post-category post-category-m' href='categories.html'>Miscelaneous</a>"
+      "Computer Graphics" : "<a class='post-category post-category-cg' href='/categories.html'>Computer Graphics</a>",
+      "Machine Learning" : "<a class='post-category post-category-ml' href='/categories.html'>Machine Learning</a>",
+      "Data Science":"<a class='post-category post-category-ds' href='/categories.html'>Data Science</a>",
+      "Data Visualisation" : "<a class='post-category post-category-dv' href='/categories.html'>Data Visualisation</a>",
+      "Gadgets": "<a class='post-category post-category-gd' href='/categories.html'>Gadgets</a>",
+      "Review": "<a class='post-category post-category-r' href='/categories.html'>Review</a>",
+      "Games" : "<a class='post-category post-category-g' href='/categories.html'>Games</a>",
+      "Films" : "<a class='post-category post-category-f' href='/categories.html'>Films</a>",
+      "Comic books" : "<a class='post-category post-category-cb' href='/categories.html'>Comic books</a>",
+      "Food" : "<a class='post-category post-category-fo' href='/categories.html'>Food</a>",
+      "Miscelaneous" : "<a class='post-category post-category-m' href='/categories.html'>Miscelaneous</a>"
     }
   },
   "pages" :[
@@ -38,13 +40,14 @@
       "type":"page"
     },
     {
-      "name":"posts/test.html",
-      "template":"posts/test.html",
+      "name":"posts/cyanogen.html",
+      "template":"posts/cyanogenmod.html",
       "type": "post",
-      "categories":["Computer Graphics","Machine Learning"],
-      "date": "2016/02/17",
-      "title": "A test post",
-      "summary" : "<p>Let's take a look in a new template renderer made in python and some use cases</p>"
+      "categories":["Review","Gadgets"],
+      "date": "2016/02/21",
+      "title": "Trying out Android 6.0 Marshmellow - Cyanogenmod 13",
+      "summary" : "<p>Some notes about Android 6.0 - Cyanogenmod, new features, improvements on the new version of the Android OS.</p><p>I tried it by installing Cyanogenmod 13, a fork made from AOSP, some differences can be found from Android found on commercial devices</p>",
+      "thumbnail" : "/img/cyanogenmod.jpg"
     }
   ]
 }
