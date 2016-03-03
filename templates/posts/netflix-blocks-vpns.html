@@ -1,0 +1,34 @@
+{% extends "post.html" %}
+{% block title %} {{current_page["title"]}} {% endblock %}
+{% block post_title %} {{current_page["title"]}} {% endblock %}
+{% block author_link %} <a class="post-link" href="/about.html#fernandomv3">fernandomv3</a> {% endblock %}
+{% block post_content %}
+<p class="center"><img src="{{current_page['thumbnail']}}" class="pure-img" style="max-width:450px"></p>
+<p>It has finally happened, Netflix has started blocking VPN services all around the world to prevent from users trying to bypass the geographical restrictions of the content catalog.</p>
+
+<h2>Your account won't be banned</h2>
+
+<p>There has been rumours about Netflix closing accounts due to a VPN being detected but the actions taken agoinst VPNs has been less radical but still pretty strict.</p>
+
+<p>Right before starting to stream content Netflix, checks your IP address, if it belongs to a known VPN service a message wll be displayed stating that an error has occured.This actually means that Netflix has a VPN blacklist.</p>
+
+<h2>Legitimate uses of VPN services</h2>
+
+<p>The sole purpose of VPNs are providing security by creating a virtual network and masking all connections to the outside(public internet) to one device while connections between devices on the network remain private an encrypted even if it is across the globe.</p>
+
+<p>So VPNs are normally used in cases where you need security and privacy but some of the users complaining about the blocking have some particular needs. Some users in reddit have mentioned the need of a VPN because they are abroad, in a country that uses a different language and doesn't even have they same catalog, so to recover their subtitles and content access, they use a VPN to access as if they were home.</p>
+
+<p>There are also claims from some users stating that their ISP providers are slowing down Netflix traffic, in fact <a href="https://youtu.be/fpbOEoRrHyU">John Oliver made a public accusation</a>(Around minute 3:50). So for them, to avoid being slow down by their internet provider they used a VPN.</p>
+
+<h2>Different catalogs for different regions</h2>
+
+<p>It was around the year 2011 that Netflix announced its expansion to Latin America. I wasn't to excited about it mainly beacuse I knew there will be limitations on catalog. This limitation was expected because Latin America always has this kind of problems, even some music videos that were released years ago weren't available on YouTube.</p>
+
+<p>The price of the service was good, around $7.99 and the catalog began growing rapidly as the days went by, so in the year 2014, I subscribed to the service.</p>
+
+<p>After watching most of the series and films that seemed interesting to me, I was told of a way to access catalogs from other countries by using VPN (stands for Virtual Private Network). It was pretty straight forward, you had to install "Hola" a Google Chrome Extension, select the country and login. The only problem was the lack of spanish subtitles but it wasn't very important for me. So after trying out "hola" and checking the catalog in a few different countries, I can say that Canada's catalog has more recent content while the USA catalog has more content, but not as recent as Canada's.</p>
+
+<h2>The dream of a unique global catalog</h2>
+
+<p>Obviously, all these problems would have been avoided if there was a unique global catalog in which everyone had access, and the availability to choose the audio and subtitles language without any geographical restriction. But why stop there? Why not have a unified service which includes content from HBO Go for example? That would be a better future.</p>
+{% endblock %}

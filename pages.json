@@ -48,6 +48,16 @@
       "title": "Trying out Android 6.0 Marshmallow - CyanogenMod 13",
       "summary" : "<p>Some notes about Android 6.0 - CyanogenMod, new features, improvements on the new version of the Android OS.</p><p>I tried it by installing CyanogenMod 13, a fork made from AOSP, some differences can be found from Android on commercial devices</p>",
       "thumbnail" : "/img/cyanogenmod.jpg"
+    },
+    {
+      "name":"posts/netflix-blocks-vpns.html",
+      "template":"posts/netflix-blocks-vpns.html",
+      "type": "post",
+      "categories":["Films","Miscelaneous"],
+      "date": "2016/03/03",
+      "title": "Netflix is now bloking VPN services",
+      "summary" : "<p>Now you can't watch your films and series in Netflix if you are using a VPN. This services were usually used for avoiding geographical restrictions on content, now you'll have to stick with your countrie's catalog.</p>",
+      "thumbnail" : "/img/netflix.png"
     }
   ]
 }
