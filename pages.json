@@ -58,6 +58,16 @@
       "title": "Netflix is now bloking VPN services",
       "summary" : "<p>Now you can't watch your films and series in Netflix if you are using a VPN. This services were usually used for avoiding geographical restrictions on content, you'll have to stick with your country's catalog.</p>",
       "thumbnail" : "/img/netflix.png"
+    },
+    {
+      "name":"posts/comprando-al-otro-lado-del-mundo.html",
+      "template":"posts/comprando-al-otro-lado-del-mundo.html",
+      "type": "post",
+      "categories":["Gadgets","Miscelaneous"],
+      "date": "2016/03/11",
+      "title": "Haciendo compras por internet en diversas partes del mundo",
+      "summary" : "<p>Notas sobre mis experiencias comprando por internet pequeños gadgets a precio barato de diversas partes del mundo. Formas de pago, envío y lugares donde comprar.</p>",
+      "thumbnail" : "/img/compras.png"
     }
   ]
 }
