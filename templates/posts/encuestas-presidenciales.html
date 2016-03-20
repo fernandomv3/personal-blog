@@ -1,0 +1,74 @@
+{% extends "post.html" %}
+{% block styles %}
+<style>
+embed{
+	height: 40vw;
+}
+@media screen and (max-width: 56em){
+  embed{
+  	height: 56vw;
+  }	
+}
+@media screen and (max-width: 47em){
+  embed{
+  	height: 60vw;
+  }	
+}
+@media screen and (max-width: 35.5em){
+  embed{
+  	height: 64vw;
+  }	
+}
+
+#ancho{
+	width: 4em;
+}
+
+#embed-code{
+	display: block;
+	margin-top: 1em;
+	width: 100%;
+	max-width: 25em;
+	font-family: "Courier New", Courier, monospace;
+}
+
+</style>
+{% endblock %}
+{% block title %} {{current_page["title"]}} {% endblock %}
+{% block post_title %} {{current_page["title"]}} {% endblock %}
+{% block author_link %} <a class="post-link" href="/about.html#fernandomv3">fernandomv3</a> {% endblock %}
+{% block post_content %}
+
+<embed src="http://server.fernandomv3.me/encuestas/encuestas.html" width="100%"></embed>
+<p><a href="http://server.fernandomv3.me/encuestas/encuestas.html">Ver en pagina completa</a><p>
+<h3>Código para incrustar:</h3>
+<label for="ancho">Ancho (en pixeles): <label><input type="number" name="ancho" id="ancho"/>
+<button type="button" id="generar">Generar</button>
+<textarea rows="4" id="embed-code"></textarea>
+</p>
+<p>Si no puedes visualizar bien este gráfico, es posible que estes usando un navegador muy antiguo o no compatible, recomiendo utilizar las versiones mas recientes de Chrome y Firefox.</p>
+
+<p>Los datos utilizados para esta gráfica han sido obtenidos de la página <a href="http://www.eleccionesenperu.com/encuestas-presidenciales-peru.php">www.eleccionesenperu.com</a>. Los datos son obtenidos por medio de un <a href="https://github.com/fernandomv3/encuestas/blob/master/encuestasScraper.py">script<a>, que fue ejecutado por última vez el 20/03/2016 a las 03:30 p.m.</p>
+
+<p>Si te gustó el gráfico puedes revisar el código, usado para obtener los datos y para generar las gráficas, en mi repositorio en <a href="https://github.com/fernandomv3/encuestas">Github</a> y próximamente en este <a href="http://blog.fernandomv3.me">blog</a> estaré posteando el procedimiento paso a paso para crear este gráfico interactivo. Si tienes alguna pregunta o te gustaría que haga algún gráfico similar para ti, puedes contactarme a través del Twitter.<p> 
+<a href="https://twitter.com/fernandomv3" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @fernandomv3</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<p><strong>No tengo asociación alguna</strong> con la página <a href="http://www.eleccionesenperu.com/encuestas-presidenciales-peru.php">www.eleccionesenperu.com</a>, con el JNE, JEE, ONPE, alguna organizadora de las elecciones, partido político, o encuestadora. Este ha sido un trabajo completamente independiente a cualquier organización.</p>
+
+<p>Relizado usando Python, BeautifulSoup y requests para el script de obtención de datos. La visualización utiliza HTML, CSS, JavaScript, SVG y la librería d3.js <p>
+{% endblock %}
+{% block scripts %}
+<script>
+document.getElementById("generar").addEventListener("click", function(){
+  var width = document.getElementById("ancho").value || 800;
+  var height;
+  if(width <= 768){
+  	height= width * 0.75;
+  }
+  else{
+  	height = width *0.56;
+  }
+  var code = '<embed src="http://server.fernandomv3.me/encuestas/encuestas.html" width="'+width+'" height="'+height+'"></embed>'
+  document.getElementById("embed-code").innerHTML = code;
+});
+</script>
+{% endblock %}

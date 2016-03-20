@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal blog where I write about various random topics. Opinions are highly personal and biased">
+  <title>fernandomv3's blog -  Visualización de resultados de encuestas presidenciales. </title>
+  <link rel="stylesheet" href="../css/pure-min.css">
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="../css/grids-responsive-min.css">
+  <!--<![endif]-->
+  <link rel="stylesheet" href="../css/blog.css">
+  
+<style>
+embed{
+	height: 40vw;
+}
+@media screen and (max-width: 56em){
+  embed{
+  	height: 56vw;
+  }	
+}
+@media screen and (max-width: 47em){
+  embed{
+  	height: 60vw;
+  }	
+}
+@media screen and (max-width: 35.5em){
+  embed{
+  	height: 64vw;
+  }	
+}
+
+#ancho{
+	width: 4em;
+}
+
+#embed-code{
+	display: block;
+	margin-top: 1em;
+	width: 100%;
+	max-width: 25em;
+	font-family: "Courier New", Courier, monospace;
+}
+
+</style>
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="menu-wrapper pure-g" id="menu">
+    <div class="pure-u-1 pure-u-md-2-5">
+      <div class="pure-menu pure-menu-horizontal menu">
+        <a href="/" class="brand-name">fernandomv3's blog</a>
+        <a href="#" class="menu-toogle" id="toggle">
+          <s class="hor-bar"></s>
+          <s class="hor-bar"></s>
+          <s class="hor-bar"></s>
+        </a>
+      </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-3-5">
+      <div class="pure-menu">
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item menu-item"><a href="/">Home</a></li>
+          <li class="pure-menu-item menu-item"><a href="/categories.html">Categories</a></li>
+          <li class="pure-menu-item menu-item"><a href="/archive.html">Archive</a></li>
+          <li class="pure-menu-item menu-item"><a href="/about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="layout" class="pure-g">
+    <div class="content pure-u-1 pure-u-md-5-5">
+    
+<article class="post">
+	<header>
+		<h2 class="post-title"> Visualización de resultados de encuestas presidenciales. </h2>
+		<p class="post-meta">By  <a class="post-link" href="/about.html#fernandomv3">fernandomv3</a>  under 
+		
+		
+		<a class='post-category post-category-dv' href='/categories.html'>Data Visualisation</a>
+		
+		</p>
+	</header>
+	<div class="post-content">
+	
+
+<embed src="http://server.fernandomv3.me/encuestas/encuestas.html" width="100%"></embed>
+<p><a href="http://server.fernandomv3.me/encuestas/encuestas.html">Ver en pagina completa</a><p>
+<h3>Código para incrustar:</h3>
+<label for="ancho">Ancho (en pixeles): <label><input type="number" name="ancho" id="ancho"/>
+<button type="button" id="generar">Generar</button>
+<textarea rows="4" id="embed-code"></textarea>
+</p>
+<p>Si no puedes visualizar bien este gráfico, es posible que estes usando un navegador muy antiguo o no compatible, recomiendo utilizar las versiones mas recientes de Chrome y Firefox.</p>
+
+<p>Los datos utilizados para esta gráfica han sido obtenidos de la página <a href="http://www.eleccionesenperu.com/encuestas-presidenciales-peru.php">www.eleccionesenperu.com</a>. Los datos son obtenidos por medio de un <a href="https://github.com/fernandomv3/encuestas/blob/master/encuestasScraper.py">script<a>, que fue ejecutado por última vez el 20/03/2016 a las 03:30 p.m.</p>
+
+<p>Si te gustó el gráfico puedes revisar el código, usado para obtener los datos y para generar las gráficas, en mi repositorio en <a href="https://github.com/fernandomv3/encuestas">Github</a> y próximamente en este <a href="http://blog.fernandomv3.me">blog</a> estaré posteando el procedimiento paso a paso para crear este gráfico interactivo. Si tienes alguna pregunta o te gustaría que haga algún gráfico similar para ti, puedes contactarme a través del Twitter.<p> 
+<a href="https://twitter.com/fernandomv3" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @fernandomv3</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<p><strong>No tengo asociación alguna</strong> con la página <a href="http://www.eleccionesenperu.com/encuestas-presidenciales-peru.php">www.eleccionesenperu.com</a>, con el JNE, JEE, ONPE, alguna organizadora de las elecciones, partido político, o encuestadora. Este ha sido un trabajo completamente independiente a cualquier organización.</p>
+
+<p>Relizado usando Python, BeautifulSoup y requests para el script de obtención de datos. La visualización utiliza HTML, CSS, JavaScript, SVG y la librería d3.js <p>
+
+	</div>
+</article>
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//fernandomv3.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+    <div id="license" class="content pure-u-1 pure-u-md-5-5">
+      <div class="licence">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </div>
+    </div>
+  </div>
+  <script src="../js/menu.js" type="text/javascript"></script>
+  
+<script>
+document.getElementById("generar").addEventListener("click", function(){
+  var width = document.getElementById("ancho").value || 800;
+  var height;
+  if(width <= 768){
+  	height= width * 0.75;
+  }
+  else{
+  	height = width *0.56;
+  }
+  var code = '<embed src="http://server.fernandomv3.me/encuestas/encuestas.html" width="'+width+'" height="'+height+'"></embed>'
+  document.getElementById("embed-code").innerHTML = code;
+});
+</script>
+
+</body>
+</html>

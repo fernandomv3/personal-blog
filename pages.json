@@ -68,6 +68,16 @@
       "title": "Haciendo compras por internet en diversas partes del mundo",
       "summary" : "<p>Notas sobre mis experiencias comprando por internet pequeños gadgets a precio barato de diversas partes del mundo. Formas de pago, envío y lugares donde comprar.</p>",
       "thumbnail" : "/img/compras.png"
+    },
+    {
+      "name":"posts/encuestas-presidenciales.html",
+      "template":"posts/encuestas-presidenciales.html",
+      "type": "post",
+      "categories":["Data Visualisation"],
+      "date": "2016/03/20",
+      "title": "Visualización de resultados de encuestas presidenciales.",
+      "summary" : "<p>He creado una visualización de los resultados de las encuestas de intención de voto para las elecciones presidenciales Perú 2016. El gráfico es dinámico y puede ser insertado en otras páginas para compartir.</p>",
+      "thumbnail" : "/img/encuestas.png"
     }
   ]
 }

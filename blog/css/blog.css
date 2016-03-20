@@ -1,5 +1,17 @@
 /*Custom styles for personal blog*/
+@font-face {
+    font-family: Helvetica;
+    src: url("/css/Helvetica.ttf");
+}
+@font-face {
+    font-family: Helvetica;
+    src: url("/css/Helvetica-Bold.ttf");
+    font-weight: bold;
+}
 
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
 body{
   background: rgba(43,43,41,1);
 }
