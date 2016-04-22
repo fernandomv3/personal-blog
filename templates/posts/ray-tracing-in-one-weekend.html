@@ -1,0 +1,58 @@
+{% extends "post.html" %}
+{% block title %} {{current_page["title"]}} {% endblock %}
+{% block post_title %} {{current_page["title"]}} {% endblock %}
+{% block author_link %} <a class="post-link" href="/about.html#fernandomv3">fernandomv3</a> {% endblock %}
+{% block post_content %}
+<p class="center"><img src="{{current_page['thumbnail']}}" class="pure-img" style="max-width:450px"></p>
+
+<p>A couple of weeks ago I got a new mini-book called "Ray Tracing in One Weekend" by Peter Shirley. I haven't had much experience with offline rendering so I decided to give it a try because it seemed a short book that goes straight to the point. After finishing it I have to say I totally enjoyed it and I am anxious to start with part two which is called "Ray Tracing: the Next Week".</p>
+
+<h3>Design of the book</h3>
+<p>Ray Tracing in One Weekend is a different type of technical book, from the first look into it you can tell it's unique, it doesn't have the fancy images , diagrams, headers or footers of a regular technical book. The author, Peter Shirley, has a <a href="http://psgraphics.blogspot.pe/2016/01/process-for-speed-writing-book.html">blog post</a> on the tools an methods he used into making that book by himself. I found absolutely brilliant the way he incorporates graphics on the book:</p>
+
+<p class="center"><img class="pure-img" style="max-width:400px;" src="/img/drawing.png"></p>
+
+<p>This kind of graphics gave me the feel of looking at a whiteboard of a computer graphics class or the notes of a friend who is teaching me something new.</p>
+
+<p>I also believe that having screenshots of the code editor was a huge win. I have never been a fan of copying and pasting code, I've always thought that you can learn so much by coding yourself even if it is just transcribing code from someone else. I have to admit I got a little frustated with the font size while bug hunting, but in the end I believe that gave me an even better understanding of some of the algorithms since I had to review them more carefully.</p>
+
+<p class="center"><img class="pure-img" style="max-width:350px;" src="/img/code.png"></p>
+
+<h3>About the content</h3>
+<p>The book is about making a simple raytracer as a weekend project, it asumes you have some knowledge on vector math, apart from that everything is straight forward, clear an concise. Every chapter has a lot of images both sketches and final outputs that helps you validate the one of your own program . It also has just the right amount of theory you may need to understand what the code is trying to do.</p>
+
+<p>The book starts by building the most basic program that outputs an image, from then on, it begins adding new features to output new effects. In the process of adding this new features, previous code will get refactored and abstracted until you have some a functional raytracer that produces cool images.</p>
+
+<p class="center"><img class="pure-img" style="max-width:200px;" src="/img/metal.png"></p>
+
+<p>Some chapters have debugging tips that will help you if you get stuck. Sometimes you will be forced to an error, this helps noticing the source of the bug and how to tackle it, having a bug can even produce images that looks correct!</p>
+
+<h3>My experience reading the book</h3>
+
+<p>The book was easy for me to read, mainly because I have some background in real-time rendering (I took Udacity's course on Interactive 3D Graphics). The fact that you get to display images since the very first chapter is encouraging, after a few chapters I found myself up late at night coding or hunting for bugs not wanting to sleep until I implemented the next feature or fixed the last bug.</p>
+
+<p>The book has code in C++, I did all the coding in Python just for the sake of practicing the language and maybe to see if I can benefit from any characteristic that it has. At the end I ended up with a very slow but fairly readable code. You can check the code in <a href="https://github.com/fernandomv3/raytracing_in_one_week">github</a>, I created a folder for every chapter in case I wanted to review the evolution of the code, every one of them also includes the final image in ppm format. Feel free to download it or even try it, but beware it is <em>really</em> slow.</p>
+
+<p class="center"><img class="pure-img" style="max-width:200px;" src="/img/dielectric.png"></p>
+
+<h3>Final thougths</h3>
+
+<p>I never felt so engaged with a technical book the way I did with this one. Publishing a book this way makes knowledge available to lots of people fast and easy. You should buy Peter Shirley's Ray Tracing Trilogy, you won't regret it.</p>
+
+<p>I'll be going after the second part of this series in this days. I'm really looking after what the rest of the series has to offer but first I think I'll do the first one again but this time in c++ to compare the speed against the implementation in Python, if it is not too different I will stick with it.</p>
+
+<h3>Update</h3>
+<p>So after implementing the whole thign in C++ I found out that there was a problem with my raytracer in python, but no matter what kind of optimizations I did to the code it didn't seem to get any faster. The solution was found by using the Pypy implementation of python.</p>
+
+<p>So, time to roughly compare the speed of both versions. I used the final program from chapter 12 of the mini book on a 200x150 image with 100 samples per pixel and a maximum recursion depth of 50. Time was measured using UNIX's time utility, here are the results:</p>
+
+<ul>
+  <li>C++ with GCC 5.2.1 : 4m10.984s</li>
+  <li>Pypy  : 5m42.304</li>
+  <li>C++ with GCC 5.2.1 -O3 optimization : 0m43.148s</li>
+</ul>
+
+<p class="center"><img class="pure-img" style="max-width:200px;" src="/img/benchmark.png"></p>
+
+<p>Pypy does give a considerable performance boost that gets quite close to C++ but it is no match for optimized C++ which was amazingly fast.</p>
+{% endblock %}

@@ -78,6 +78,16 @@
       "title": "Visualización de resultados de encuestas presidenciales.",
       "summary" : "<p>He creado una visualización de los resultados de las encuestas de intención de voto para las elecciones presidenciales Perú 2016. El gráfico es dinámico y puede ser insertado en otras páginas para compartir.</p>",
       "thumbnail" : "/img/encuestas.png"
+    },
+    {
+      "name":"posts/ray-tracing-in-one-weekend.html",
+      "template":"posts/ray-tracing-in-one-weekend.html",
+      "type": "post",
+      "categories":["Computer Graphics","Review"],
+      "date": "2016/04/04",
+      "title": "Making a ray tracer as a weekend project",
+      "summary" : "<p>Review of Peter Shirley's mini-book on how to make a ray tracer as your weekend project. I also mention my experience following the book and building a ray tracer from scratch.</p>",
+      "thumbnail" : "/img/full-100.png"
     }
   ]
 }
