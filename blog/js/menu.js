@@ -1,5 +1,5 @@
 (function (window, document) {
-var menu = document.getElementById('menu'),
+var menu = document.getElementById('layout'),
     WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
 
 

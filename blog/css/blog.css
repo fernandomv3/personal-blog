@@ -86,14 +86,20 @@ section.post{
 }
 
 .menu-wrapper{
-  height:3em;
+  height: 11.625em;
   background-color: #343B77;
   overflow: hidden;
-  transition: height 0.25s;
 }
 
-.menu-wrapper.open{
-  height: 11.625em;
+#layout{
+  background-color: rgba(43,43,41,1);
+  transform: translateY(-8.625em);
+  transition:transform 0.25s;
+  will-change:transform;
+}
+
+#layout.open{
+  transform:none;
 }
 
 .menu{
@@ -121,19 +127,14 @@ section.post{
   text-decoration: none;
 }
 
-.menu-toogle.x .hor-bar{
-  width: 0;
-  left: 1.5em;
+.menu-toogle.x .hor-bar:nth-child(2){
+  transform: scaleX(0);
 }
 .menu-toogle.x .hor-bar:first-child{
   transform: rotate(-45deg);
-  width: 1.5em;
-  left: 0.75em;
 }
 .menu-toogle.x .hor-bar:last-child{
   transform: rotate(45deg);
-  width: 1.5em;
-  left: 0.75em;
 }
 
 .hor-bar{
@@ -144,7 +145,8 @@ section.post{
   position: absolute;
   top: 1.375em;
   left: 0.75em;
-  transition: all 0.25s;
+  will-change: transform;
+  transition: transform 0.25s;
 }
 
 .hor-bar:first-child{
